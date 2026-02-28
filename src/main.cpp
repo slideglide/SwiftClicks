@@ -33,7 +33,7 @@ class SwiftClickPopup : public Popup {
         
         m_toggle = CCMenuItemExt::createTogglerWithStandardSprites(
             0.7f,
-            [this](CCMenuItemToggler* m_toggle) {
+            [this](CCMenuItemToggler* btn) {
                 m_enabled = !m_toggle->isToggled();
                 Mod::get()->setSavedValue("sc-enabled", m_enabled);
             }
