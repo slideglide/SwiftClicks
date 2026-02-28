@@ -71,7 +71,7 @@ class SwiftClickPopup : public Popup {
         auto leftSpr = CCSprite::createWithSpriteFrameName("GJ_arrow_01_001.png");
         auto leftBtn = CCMenuItemExt::createSpriteExtra(
             leftSpr,
-            [this](CCMenuItemSpriteExtra* leftBtn) {
+            [this](CCMenuItemSpriteExtra* btn) {
                 if (m_clicks > 2) {
                     m_clicks--;
                     Mod::get()->setSavedValue("sc-clicks", m_clicks);
